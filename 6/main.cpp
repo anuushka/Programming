@@ -1,0 +1,28 @@
+#include "template.h"
+#include <iostream>
+#include <iterator>
+
+using namespace std;
+
+bool isOdd(int i)
+{
+	return i%2 == 1;
+}
+
+bool isPositive(int i)
+{
+	return  i > 0;
+}
+int main()
+{
+    int A[] = {2, 4, 6, 8, 10, 6, 7, 8};
+    int N = sizeof(A) / sizeof(A[0]); 
+	cout << all_of(A, A + N, isPositive) << '\n';
+	cout << one_of(A, A + N, isOdd)  << '\n';
+	int * p;
+	p = find_backward(A, A+N, 9);
+	if (p != A+N)
+    	cout << "Element found in array: " << *p << '\n';
+ 	else
+    	cout << "Element not found in array\n";
+}
