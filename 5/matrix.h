@@ -1,9 +1,5 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <cmath>
-#include "pow.h"
 #pragma once
+
 using namespace std;
 
 class arrayException

@@ -3,6 +3,7 @@
 #include <string>
 #include <cmath>
 #include "matrix.h"
+#include "pow.h"
 
 using namespace std;
 
