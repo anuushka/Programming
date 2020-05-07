@@ -1,6 +1,5 @@
 #pragma once
 #include "interface.h"
-#include<bits/stdc++.h>
 using namespace std;
 void write_interface()
 {

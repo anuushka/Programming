@@ -1,5 +1,9 @@
+#include<iostream>
+#include<cmath>
+#include<vector>
+#include<algorithm>
 #include "parallelogram.h"
-#include<bits/stdc++.h>
+#include "interface.h"
 
 Parallelogram::Parallelogram()
 {

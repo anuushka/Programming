@@ -1,5 +1,8 @@
+#include<iostream>
+#include<cmath>
+#include<vector>
+#include<algorithm>
 #include "rectangle.h"
-#include<bits/stdc++.h>
 using namespace std;
 
 Rectangle::Rectangle()

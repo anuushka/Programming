@@ -1,6 +1,6 @@
 #include <iostream>
+#include <fstream>
 #include <cmath>
-#include <algorithm>
 #include "interface.h"
 using namespace std;
 

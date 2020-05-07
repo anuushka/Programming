@@ -1,4 +1,7 @@
-#include<bits/stdc++.h>
+#include<iostream>
+#include<cmath>
+#include<vector>
+#include<algorithm>
 #include "rectangle.h"
 #include "parallelogram.h"
 #include "menu.h"
