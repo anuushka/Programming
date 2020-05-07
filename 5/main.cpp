@@ -1,8 +1,8 @@
-#include "matrix.h"
 #include <iostream>
 #include <vector>
 #include <string>
 #include <cmath>
+#include "matrix.h"
 
 using namespace std;
 
