@@ -5,7 +5,6 @@
 
 using namespace std;
 
-
 int main()
 {
 	int A[] = {2, 4, 6, 8, 10, 6, 7, 8};
