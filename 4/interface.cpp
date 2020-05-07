@@ -1,5 +1,7 @@
+#include <iostream>
+#include <cmath>
+#include <algorithm>
 #include "interface.h"
-#include<bits/stdc++.h>
 using namespace std;
 
 CVector2D::CVector2D(): x(0), y(0)
