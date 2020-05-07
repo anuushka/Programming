@@ -15,14 +15,14 @@ bool isPositive(int i)
 }
 int main()
 {
-    int A[] = {2, 4, 6, 8, 10, 6, 7, 8};
-    int N = sizeof(A) / sizeof(A[0]); 
+	int A[] = {2, 4, 6, 8, 10, 6, 7, 8};
+	int N = sizeof(A) / sizeof(A[0]); 
 	cout << all_of(A, A + N, isPositive) << '\n';
 	cout << one_of(A, A + N, isOdd)  << '\n';
 	int * p;
 	p = find_backward(A, A+N, 9);
 	if (p != A+N)
-   		cout << "Element found in array: " << *p << '\n';
+		cout << "Element found in array: " << *p << '\n';
 	else
-   		cout << "Element not found in array\n";
+		cout << "Element not found in array\n";
 }
