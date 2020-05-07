@@ -1,6 +1,4 @@
 #pragma once
-#include <iterator>
-
 
 template<class InputIterator, class UnaryPredictor>
   bool all_of (InputIterator first, InputIterator last, UnaryPredictor pred)
