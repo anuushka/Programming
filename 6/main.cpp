@@ -1,9 +1,12 @@
 #include <iostream>
 #include <iterator>
-#include "template.h"
+#include "find_backward.h"
+#include "one_of.h"
+#include "all_of.h"
 #include "function.h"
 
 using namespace std;
+
 
 int main()
 {
