@@ -1,18 +1,11 @@
 #include <iostream>
 #include <iterator>
 #include "template.h"
+#include "function.h"
 
 using namespace std;
 
-bool isOdd(int i)
-{
-	return i%2 == 1;
-}
 
-bool isPositive(int i)
-{
-	return  i > 0;
-}
 int main()
 {
 	int A[] = {2, 4, 6, 8, 10, 6, 7, 8};
@@ -22,7 +15,7 @@ int main()
 	int * p;
 	p = find_backward(A, A+N, 9);
 	if (p != A+N)
-		cout << "Element found in array: " << *p << '\n';
+   		cout << "Element found in array: " << *p << '\n';
 	else
-		cout << "Element not found in array\n";
+   		cout << "Element not found in array\n";
 }
