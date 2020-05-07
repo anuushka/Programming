@@ -1,5 +1,7 @@
 #pragma once
-#include<bits/stdc++.h>
+#include <iostream>
+#include <cmath>
+#include <algorithm>
 using namespace std;
 
 class IGeoFig
