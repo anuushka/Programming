@@ -1,6 +1,6 @@
-#include "template.h"
 #include <iostream>
 #include <iterator>
+#include "template.h"
 
 using namespace std;
 
