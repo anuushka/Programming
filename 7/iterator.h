@@ -25,7 +25,7 @@ class Iterator: public std::iterator<std::random_access_iterator_tag, T>
 	
 	bool operator== (Iterator const& other) const {
         return this->pos % capacity == other.pos % capacity;
-    }
+    	}
 		
 	bool operator!= (Iterator const& other) const
 	{
@@ -52,7 +52,7 @@ class Iterator: public std::iterator<std::random_access_iterator_tag, T>
 	bool operator>= (const Iterator& rhs) const 
 	{
         if (front > rear) 
-		{
+	{
             if (pos < capacity && rhs.pos < capacity) 
                 return pos >= rhs.pos;
             else if (pos < capacity) 
@@ -61,10 +61,9 @@ class Iterator: public std::iterator<std::random_access_iterator_tag, T>
                 return true;
             else 
                 return pos >= rhs.pos;
-        }
-        else
-            return pos >= rhs.pos;
-    }
+	}
+        else return pos >= rhs.pos;
+    	}
 	
 	bool operator< (const Iterator& rhs) const
 	{
@@ -79,74 +78,82 @@ class Iterator: public std::iterator<std::random_access_iterator_tag, T>
 			else
 				return pos < rhs.pos;
 		}
-		else
-			pos < rhs.pos;
+		else return pos < rhs.pos;
 	}
 	
 	 bool operator<= (const Iterator& rhs) const 
 	 {
-        if (front > rear) {
-            if (pos < capacity && rhs.pos < capacity) 
-                return pos <= rhs.pos;
-            else if (pos < capacity) 
-                return true;
-            else if (rhs.pos < capacity) 
-                return false;
-            else 
-                return pos <= rhs.pos;
-        }
-        else 
-            return pos <= rhs.pos;
-    }
+		if (front > rear) 
+		{
+		    if (pos < capacity && rhs.pos < capacity) 
+			return pos <= rhs.pos;
+		    else if (pos < capacity) 
+			return true;
+		    else if (rhs.pos < capacity) 
+			return false;
+		    else 
+			return pos <= rhs.pos;
+		}
+        	else return pos <= rhs.pos;
+    	}
 	
-	difference_type operator- (const Iterator& it) const {
-        Iterator itr = *this;
-        itr.pos -= it.pos;
-        return *itr;
-    }
-
-    difference_type operator+ (const Iterator& it) const {
-        Iterator itr = *this;
-        itr.pos += it.pos;
-        return *itr;
-    }
-
-    Iterator operator+ (const int& ptr) const {
-        Iterator itr = *this;
-        itr.pos = (pos + ptr) % capacity;
-        return itr;
-    }
-
-     Iterator operator- (const int& ptr) const {
-        Iterator itr = *this;
-        itr.pos = (pos + capacity - ptr) % capacity;
-        return itr;
-    }
-    
-    Iterator operator++ () {
-        this->pos++;
-        return *this;
-    }
-
-    Iterator operator++ (int) {
-        Iterator tmp(*this);
-        operator++ ();
-        return tmp;
-    }
-
-    Iterator operator-- () {
-        this->pos--;
-        return *this;
-    }
-    Iterator operator-- (int) {
-        Iterator tmp(*this);
-        operator-- ();
-        return tmp;
-    }
-    
-     typename Iterator::reference operator* () const 
+	difference_type operator- (const Iterator& it) const 
 	{
-        return data[pos % capacity];
-    }
+		Iterator itr = *this;
+		itr.pos -= it.pos;
+		return *itr;
+   	}
+
+    	difference_type operator+ (const Iterator& it) const 
+	{
+		Iterator itr = *this;
+		itr.pos += it.pos;
+		return *itr;
+    	}
+
+    	Iterator operator+ (const int& ptr) const 
+	{
+		Iterator itr = *this;
+		itr.pos = (pos + ptr) % capacity;
+		return itr;
+    	}
+
+     	Iterator operator- (const int& ptr) const 
+	{
+		Iterator itr = *this;
+		itr.pos = (pos + capacity - ptr) % capacity;
+		return itr;
+    	}
+    
+    	Iterator operator++ () 
+	{
+		this->pos++;
+		return *this;
+    	}
+
+    	Iterator operator++ (int) 
+	{
+		Iterator tmp(*this);
+		operator++ ();
+		return tmp;
+    	}
+
+    	Iterator operator-- () 
+	{
+		this->pos--;
+		return *this;
+    	}
+	
+    	Iterator operator-- (int) 
+	{
+		Iterator tmp(*this);
+		operator-- ();
+		return tmp;
+    	}
+    
+     	typename Iterator::reference operator* () const 
+	{
+        	return data[pos % capacity];
+    	}
 };
 
