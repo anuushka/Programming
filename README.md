@@ -1,4 +1,4 @@
-# Rubik
+Lab 8:
 
 INPUT:
 W: b b b b y y y g w
