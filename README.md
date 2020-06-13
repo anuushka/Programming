@@ -1,3 +1,3 @@
 # Programming
 
-Assignment labs in branches (sem1, sem2)
+Assignment labs in branch semester 2
