@@ -16,6 +16,7 @@ Lab 8 Rubik cube solver (Class cube, functions)
 
 Lab 8 
 INPUT:
+
 W: b b b b y y y g w 
 
 R: y g g o r w r r r 
