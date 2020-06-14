@@ -12,7 +12,7 @@ Lab 6 Algorithms (find_backward, all_of, one_of) OK
 
 Lab 7 Circular Buffer (More like Deque with Iterator) OK
 
-Lab 8 Rubik cube solver (Class cube, functions)
+Lab 8 Rubik cube solver (Class cube, functions) OK 
 
 Lab 8 
 INPUT:
